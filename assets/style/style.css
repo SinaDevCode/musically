@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: flex;
+  justify-content: end;
+  color: #fff;
+}
+
+.btn {
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  background-color: #1A9E9A;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+nav {
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100px;
+  padding: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li .logo {
+  padding: 0.5rem;
+  width: 42px;
+  height: 42px;
+  background-color: #1A9E9A;
+  border-radius: 1.5rem;
+}
+nav ul li.nav-logo {
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+nav ul li.nav-icons {
+  gap: 1.5rem;
+}
+nav .nav-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+main {
+  padding: 1.5rem 2rem;
+  width: calc(100% - 100px);
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main header .left-side,
+main header .right-side {
+  display: flex;
+  align-items: center;
+}
+main header .left-side {
+  gap: 1.5rem;
+}
+main header .left-side .search {
+  position: relative;
+  height: 2.5rem;
+  width: 20rem;
+}
+main header .left-side .search .search-box {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #b0b0b0;
+  padding-left: 3rem;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+main header .left-side .search .search-box::placeholder {
+  color: #b0b0b0;
+  font-weight: 300;
+}
+main header .left-side .search .search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main header .right-side {
+  gap: 4rem;
+}
+main header .right-side .icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .content {
+  display: flex;
+  gap: 2rem;
+}
+main .content .left-side {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .content .left-side .banner {
+  width: 100%;
+  background: url(../src/images/Jahan-e-Laghar.png) no-repeat center/cover;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+main .content .left-side .banner .reward {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+main .content .left-side .banner .song {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+main .content .left-side .banner .artist-name {
+  color: #1A9E9A;
+  font-size: 1.75rem;
+}
+main .content .left-side .banner .more {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+main .content .left-side .banner .more .friends {
+  display: flex;
+  align-items: center;
+}
+main .content .left-side .banner .more .friends img {
+  width: 28px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+main .content .left-side .banner .more .friends img:first-child {
+  z-index: 3;
+}
+main .content .left-side .banner .more .friends img:nth-child(2) {
+  transform: translateX(-0.5rem);
+  z-index: 2;
+}
+main .content .left-side .banner .more .friends img:last-child {
+  transform: translateX(-1rem);
+}
+main .content .left-side .banner .more .listening {
+  font-size: 14px;
+  font-weight: 300;
+}
+main .content .left-side .banner .more .like-counter {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+main .content .left-side .banner .more .like-counter p {
+  font-size: 14px;
+}
+main .content .left-side .banner .btns {
+  margin-top: 1.5rem;
+}
+main .content .left-side .banner .btns .follow {
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+}
+main .content .left-side .week-album [albumSwiper] {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .content .left-side .week-album [albumSwiper] .prev-next {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+}
+main .content .left-side .week-album [albumSwiper] .prev-next .prev,
+main .content .left-side .week-album [albumSwiper] .prev-next .next {
+  width: 2rem;
+  aspect-ratio: 1;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+main .content .left-side .week-album [albumSwiper] .prev-next .prev:hover,
+main .content .left-side .week-album [albumSwiper] .prev-next .next:hover {
+  opacity: 1;
+}
+main .content .left-side .week-album [albumSwiper] .prev-next .prev img,
+main .content .left-side .week-album [albumSwiper] .prev-next .next img {
+  scale: 0.8;
+}
+main .content .left-side .week-album [albumSwiper] .swiper-slide {
+  width: 100px;
+}
+main .content .left-side .week-album [albumSwiper] .swiper-slide img {
+  width: 150px;
+  aspect-ratio: 1;
+  border-radius: 0.5rem;
+}
+main .content .left-side .week-album [albumSwiper] .swiper-slide .details {
+  padding: 0.25rem 0;
+}
+main .content .left-side .week-album [albumSwiper] .swiper-slide .details .owner {
+  font-size: 15px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+main .content .left-side .week-album [albumSwiper] .swiper-slide .details .album-name {
+  font-weight: 400;
+  font-size: 13px;
+  color: #b0b0b0;
+}
+main .content .left-side .week-album [albumSwiper] .next-button {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  background-color: rgba(26, 26, 26, 0.3);
+  height: 150px;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  z-index: 2;
+}
