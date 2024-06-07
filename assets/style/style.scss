@@ -193,7 +193,7 @@ main {
         gap: 2rem;
 
         .left-side {
-            width: 75%;
+            width: 70%;
             display: flex;
             flex-direction: column;
             gap: 1rem;
@@ -412,6 +412,203 @@ main {
                             width: 24px;
                             aspect-ratio: 1;
                             transform: translateX(2px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 30%;
+            
+            .trending-artists {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                
+                .head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    a {
+                        color: $Light-Gray;
+                    }
+                }
+
+                .row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+
+                    .profile {
+                        display: flex;
+                        gap: 1.25rem;
+
+                        img {
+                            width: 48px;
+                            aspect-ratio: 1;
+                            border-radius: 50%;
+                        }
+                    
+                        .information {
+                            display: flex;
+                            flex-direction: column;
+
+                            p:first-child {
+                                font-weight: 500;
+                            }
+
+                            p:last-child {
+                                color: $Light-Gray;
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+
+                    .rank {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        .state {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+
+                            p {
+                                font-size: 14px;
+                                font-weight: 300;
+                                color: $Light-Gray;
+                            }
+                        }
+
+                        .position {
+                            font-size: 24px;
+                            font-weight: 300;
+                            color: $Light-Gray;
+                        }
+                    }
+                }
+            }
+
+            .genres {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+
+                    .tag {
+                        color: $Light-Gray;
+                        border: 1px solid $Light-Gray;
+                        border-radius: 1rem;
+                        padding: 0.5rem 1.25rem;
+                    }
+                }
+            }
+
+            .now-playing {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .card {
+                    padding: 2rem 4rem;
+                    width: 100%;
+                    aspect-ratio: 1;
+                    background: linear-gradient(45deg, rgba($Cyan, 0.2), rgba($Dark-Gray, 0.2));
+                    border-radius: 16px;
+                    backdrop-filter: blur(6.6px);
+                    -webkit-backdrop-filter: blur(6.6px);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+
+                    img {
+                        width: 60%;
+                        height: 60%;
+                        border-radius: 1rem;
+                    }
+
+                    .playing-song {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        
+                        .song-information {
+                            
+                            .singer-name {
+                                line-height: 1.5rem;
+                                font-weight: 300;
+                                color: $Light-Gray;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .icons {
+                            display: flex;
+                            align-items: end;
+                            gap: 1rem;
+                        }
+                    }
+
+                    .time {
+                        position: relative;
+                        width: 100%;
+                        margin-bottom: 2rem;
+
+                        p {
+                            position: absolute;
+                            bottom: -1.5rem;
+                            font-size: 14px;
+
+                            &.current-time {
+                                left: 0;
+                            }
+
+                            &.full-time {
+                                right: 0;
+                            }
+                        }
+                    
+                        input[type=range] {
+                            width: 100%;
+                            height: 3px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .music-control {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        i {
+                            font-size: 18px;
+                            cursor: pointer;
+
+                            &[musicStatus] {
+                                width: 54px;
+                                height: 54px;
+                                font-size: 1.5rem;
+                                border: 4px solid $Cyan;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
                         }
                     }
                 }

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------- Font Awesome ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!------- Swiper CDN ------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!------- CSS Style ------->
@@ -250,8 +252,119 @@
                     </div>
                 </section>
             </div>
-            <div class="Sidebar">
-                
+            <!------- Sidebar ------->
+            <div class="sidebar">
+                <section class="trending-artists">
+                    <div class="head">
+                        <h2>Trending Artists</h2>
+                        <a href="">See All</a>
+                    </div>
+                    <div class="row">
+                        <div class="profile">
+                            <img src="./assets/src/images/friend-1.jpg" alt="">
+                            <div class="information">
+                                <p class="name">Dawid Podsiadlo</p>
+                                <p class="album-number">4 Albums</p>
+                            </div>
+                        </div>
+                        <div class="rank">
+                            <div class="state">
+                                <img src="./assets/src/svgs/arrow-up-circle.svg" alt="">
+                                <p>+2</p>
+                            </div>
+                            <div class="position">01</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile">
+                            <img src="./assets/src/images/friend-2.jpg" alt="">
+                            <div class="information">
+                                <p class="name">Dawid Podsiadlo</p>
+                                <p class="album-number">1 Albums</p>
+                            </div>
+                        </div>
+                        <div class="rank">
+                            <div class="state">
+                                <img src="./assets/src/svgs/arrow-up-circle.svg" alt="">
+                                <p>+1</p>
+                            </div>
+                            <div class="position">02</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile">
+                            <img src="./assets/src/images/friend-3.jpg" alt="">
+                            <div class="information">
+                                <p class="name">Dawid Podsiadlo</p>
+                                <p class="album-number">5 Albums</p>
+                            </div>
+                        </div>
+                        <div class="rank">
+                            <div class="state">
+                                <img src="./assets/src/svgs/arrow-down-circle.svg" alt="">
+                                <p>-2</p>
+                            </div>
+                            <div class="position">03</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile">
+                            <img src="./assets/src/images/avatar.jpg" alt="">
+                            <div class="information">
+                                <p class="name">Kaska Sochacka</p>
+                                <p class="album-number">3 Albums</p>
+                            </div>
+                        </div>
+                        <div class="rank">
+                            <div class="state">
+                                <img src="./assets/src/svgs/arrow-down-circle.svg" alt="">
+                                <p>-1</p>
+                            </div>
+                            <div class="position">04</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="genres">
+                    <h2>Genres</h2>
+                    <div class="tags">
+                        <span class="tag">Hip hop</span>
+                        <span class="tag">House</span>
+                        <span class="tag">Country</span>
+                        <span class="tag">Classic</span>
+                        <span class="tag">Pop</span>
+                        <span class="tag">Blues</span>
+                        <span class="tag">Rock</span>
+                    </div>
+                </section>
+                <section class="now-playing">
+                    <h2>Now Playing</h2>
+                    <div class="card">
+                        <img src="./assets/src/images/Jahan-e-Laghar.png" alt="">
+                        <audio src="./assets/src/audios/Jahan e Laghar.mp3"></audio>
+                        <div class="playing-song">
+                            <div class="song-information">
+                                <p class="song-name">Jahan e Laghar</p>
+                                <p class="singer-name">Mohsen Chavoshi</p>
+                            </div>
+                            <div class="icons">
+                                <img src="./assets/src/svgs/empty-heart.svg" alt="">
+                                <img src="./assets/src/svgs/download.svg" alt="">
+                             </div>
+                        </div>
+                        <div class="time">
+                            <input type="range" id="progress" value="0">
+                            <p class="current-time">00:00</p>
+                            <p class="full-time">04:32</p>
+                        </div>
+                        <div class="music-control">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-solid fa-play" musicStatus></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
