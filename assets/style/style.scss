@@ -205,6 +205,10 @@ main {
                 border-radius: 1rem;
                 padding: 3rem;
 
+                p:not(.listening, .like-counter p) {
+                    text-shadow: 2px 2px 16px $Black;
+                }
+
                 .reward {
                     font-weight: 500;
                     letter-spacing: 1px;
@@ -254,7 +258,8 @@ main {
 
                     .listening {
                         font-size: 14px;
-                        font-weight: 300;
+                        font-weight: 500;
+                        color: $Cyan;
                     }
 
                     .like-counter {
@@ -264,6 +269,8 @@ main {
 
                         p {
                             font-size: 14px;
+                            font-weight: 500;
+                            color: $Cyan;
                         }
                     }
                 }
@@ -271,13 +278,30 @@ main {
                 .btns {
                     margin-top: 1.5rem;
 
+                    .btn {
+                        opacity: 0.8;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+
                     .follow {
                         height: 2.5rem;
                         padding: 0 1.5rem;
                         background-color: transparent;
-                        border: 2px solid $White;
+                        border: 2px solid $Cyan;
                         border-radius: 8px;
-                        color: $White;
+                        color: $Cyan;
+                        font-weight: 500; 
+                        opacity: 0.8;
+                        transition: background-color 0.2s ease, color 0.2s ease;
+
+                        &:hover {
+                            background-color: $Cyan;
+                            color: $White;
+                            font-weight: 400;
+                        }
                     }
                 }
             }
@@ -374,7 +398,6 @@ main {
 
                 .row {
                     display: flex;
-                    justify-content: space-between;
 
                     & > div {
                         display: flex;
@@ -387,7 +410,8 @@ main {
                         }
 
                         &.information {
-                
+                            width: 30%;
+
                             img {
                                 width: 48px;
                                 aspect-ratio: 1;
@@ -395,7 +419,24 @@ main {
                             }
                         }
 
+                        &.owner {
+                            width: 20%;
+                        }
+
+                        &.duration {
+                            width: 15%;
+                        }
+
+                        &.listened {
+                            width: 15%;
+                        }
+
+                        &.liked {
+                            width: 15%;
+                        }
+
                         &.play {
+                            width: 5%;
 
                             .icon {
                                 display: flex;
@@ -405,6 +446,7 @@ main {
                                 padding: 0.5rem;
                                 border-radius: 1.5rem;
                                 cursor: pointer;
+                                scale: 0.75;
                             }
                         }
 
@@ -412,6 +454,7 @@ main {
                             width: 24px;
                             aspect-ratio: 1;
                             transform: translateX(2px);
+                            cursor: default;
                         }
                     }
                 }
@@ -512,6 +555,13 @@ main {
                         border: 1px solid $Light-Gray;
                         border-radius: 1rem;
                         padding: 0.5rem 1.25rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $Cyan;
+                            border-color: $Cyan;
+                            color: $White;
+                        }
                     }
                 }
             }
@@ -559,7 +609,7 @@ main {
                         .icons {
                             display: flex;
                             align-items: end;
-                            gap: 1rem;
+                            gap: 1rem
                         }
                     }
 

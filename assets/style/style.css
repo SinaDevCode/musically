@@ -177,6 +177,9 @@ main .content .left-side .banner {
   border-radius: 1rem;
   padding: 3rem;
 }
+main .content .left-side .banner p:not(.listening, .like-counter p) {
+  text-shadow: 2px 2px 16px #000;
+}
 main .content .left-side .banner .reward {
   font-weight: 500;
   letter-spacing: 1px;
@@ -220,7 +223,8 @@ main .content .left-side .banner .more .friends img:last-child {
 }
 main .content .left-side .banner .more .listening {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
+  color: #1a9e9a;
 }
 main .content .left-side .banner .more .like-counter {
   display: flex;
@@ -229,17 +233,33 @@ main .content .left-side .banner .more .like-counter {
 }
 main .content .left-side .banner .more .like-counter p {
   font-size: 14px;
+  font-weight: 500;
+  color: #1a9e9a;
 }
 main .content .left-side .banner .btns {
   margin-top: 1.5rem;
+}
+main .content .left-side .banner .btns .btn {
+  opacity: 0.8;
+}
+main .content .left-side .banner .btns .btn:hover {
+  opacity: 1;
 }
 main .content .left-side .banner .btns .follow {
   height: 2.5rem;
   padding: 0 1.5rem;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #1a9e9a;
   border-radius: 8px;
+  color: #1a9e9a;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+main .content .left-side .banner .btns .follow:hover {
+  background-color: #1a9e9a;
   color: #fff;
+  font-weight: 400;
 }
 main .content .left-side .week-album {
   margin-top: 1rem;
@@ -321,7 +341,6 @@ main .content .left-side .popular-tracks {
 }
 main .content .left-side .popular-tracks .row {
   display: flex;
-  justify-content: space-between;
 }
 main .content .left-side .popular-tracks .row > div {
   display: flex;
@@ -332,10 +351,28 @@ main .content .left-side .popular-tracks .row > div p {
   color: #b0b0b0;
   font-weight: 300;
 }
+main .content .left-side .popular-tracks .row > div.information {
+  width: 30%;
+}
 main .content .left-side .popular-tracks .row > div.information img {
   width: 48px;
   aspect-ratio: 1;
   border-radius: 8px;
+}
+main .content .left-side .popular-tracks .row > div.owner {
+  width: 20%;
+}
+main .content .left-side .popular-tracks .row > div.duration {
+  width: 15%;
+}
+main .content .left-side .popular-tracks .row > div.listened {
+  width: 15%;
+}
+main .content .left-side .popular-tracks .row > div.liked {
+  width: 15%;
+}
+main .content .left-side .popular-tracks .row > div.play {
+  width: 5%;
 }
 main .content .left-side .popular-tracks .row > div.play .icon {
   display: flex;
@@ -345,11 +382,13 @@ main .content .left-side .popular-tracks .row > div.play .icon {
   padding: 0.5rem;
   border-radius: 1.5rem;
   cursor: pointer;
+  scale: 0.75;
 }
 main .content .left-side .popular-tracks .row > div img {
   width: 24px;
   aspect-ratio: 1;
   transform: translateX(2px);
+  cursor: default;
 }
 main .content .sidebar {
   display: flex;
@@ -432,6 +471,12 @@ main .content .sidebar .genres .tags .tag {
   border: 1px solid #b0b0b0;
   border-radius: 1rem;
   padding: 0.5rem 1.25rem;
+  cursor: pointer;
+}
+main .content .sidebar .genres .tags .tag:hover {
+  background-color: #1a9e9a;
+  border-color: #1a9e9a;
+  color: #fff;
 }
 main .content .sidebar .now-playing {
   display: flex;
