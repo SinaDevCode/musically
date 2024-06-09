@@ -2,6 +2,8 @@
 
 A music page built with HTML, SASS, and JavaScript
 
+You can see the live demo on this link: https://sinadevcode.github.io/musically/
+
 ### Design Preview
 
 ![Design preview for the Musically](./design/desktop-perview.png)
