@@ -1,375 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!------- Font Awesome ------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!------- Swiper CDN ------->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!------- CSS Style ------->
-    <link rel="stylesheet" href="assets/style/style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!------- Font Awesome ------->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!------- Swiper CDN ------->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <!------- CSS Style ------->
+        <link rel="stylesheet" href="assets/style/style.css" />
 
-    <title>Musically</title>
-</head>
-<body>
-    <nav>
-        <ul class="nav-items">
-            <li class="nav-logo">
-                <svg class="logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.8894 5.1786V16.4786C20.8894 18.4586 19.2794 20.0686 17.2994 20.0686C15.3294 20.0686 13.7094 18.4586 13.7094 16.4786C13.7094 14.5086 15.3294 12.8986 17.2994 12.8986C18.1394 12.8986 18.8894 13.1886 19.4994 13.6686V7.7186L10.2894 10.3386V18.4086C10.2894 20.3886 8.66937 21.9986 6.69937 21.9986C4.71937 21.9986 3.10938 20.3886 3.10938 18.4086C3.10938 16.4386 4.71937 14.8286 6.69937 14.8286C7.52938 14.8286 8.27938 15.1186 8.88938 15.5886V6.7486C8.88938 5.2786 9.77938 4.1386 11.1894 3.7586L16.9694 2.1786C18.1394 1.8586 19.1294 1.9686 19.8294 2.5086C20.5394 3.0386 20.8894 3.9386 20.8894 5.1786Z" fill="#fff"/></svg>
-                <h1>Musically</h1>
-            </li>
-            <li class="nav-icons">
-                <img src="assets/src/svgs/home.svg" alt="Home">
-                <img src="assets/src/svgs/explore.svg" alt="Explore">
-                <img src="assets/src/svgs/music-library.svg" alt="Music Library">
-                <img src="assets/src/svgs/music.svg" alt="Music">
-                <img src="assets/src/svgs/microphone.svg" alt="Microphone">
-                <img src="assets/src/svgs/radio.svg" alt="Radio">
-            </li>
-        </ul>
-        <div class="nav-bottom">
-            <img src="assets/src/images/avatar.jpg" alt="User image" class="avatar">
-        </div>
-    </nav>
+        <title>Musically</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-logo">
+                    <svg
+                        class="logo"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M20.8894 5.1786V16.4786C20.8894 18.4586 19.2794 20.0686 17.2994 20.0686C15.3294 20.0686 13.7094 18.4586 13.7094 16.4786C13.7094 14.5086 15.3294 12.8986 17.2994 12.8986C18.1394 12.8986 18.8894 13.1886 19.4994 13.6686V7.7186L10.2894 10.3386V18.4086C10.2894 20.3886 8.66937 21.9986 6.69937 21.9986C4.71937 21.9986 3.10938 20.3886 3.10938 18.4086C3.10938 16.4386 4.71937 14.8286 6.69937 14.8286C7.52938 14.8286 8.27938 15.1186 8.88938 15.5886V6.7486C8.88938 5.2786 9.77938 4.1386 11.1894 3.7586L16.9694 2.1786C18.1394 1.8586 19.1294 1.9686 19.8294 2.5086C20.5394 3.0386 20.8894 3.9386 20.8894 5.1786Z"
+                            fill="#fff"
+                        />
+                    </svg>
+                    <h1>Musically</h1>
+                </li>
+                <li class="nav-icons">
+                    <img src="assets/src/svgs/home.svg" alt="Home" />
+                    <img src="assets/src/svgs/explore.svg" alt="Explore" />
+                    <img
+                        src="assets/src/svgs/music-library.svg"
+                        alt="Music Library"
+                    />
+                    <img src="assets/src/svgs/music.svg" alt="Music" />
+                    <img
+                        src="assets/src/svgs/microphone.svg"
+                        alt="Microphone"
+                    />
+                    <img src="assets/src/svgs/radio.svg" alt="Radio" />
+                </li>
+            </ul>
+            <div class="nav-bottom">
+                <img
+                    src="assets/src/images/avatar.jpg"
+                    alt="User image"
+                    class="avatar"
+                />
+            </div>
+        </nav>
 
-    <!------- Main ------->
-    <main>
-        <header>
-            <div class="left-side">
-                <img src="assets/src/svgs/arrow-left-right.svg" alt="">
-                <div class="search">
-                    <input type="text" class="search-box" placeholder="Search for songs, artists etc.">
-                    <img src="assets/src/svgs/search.svg" alt="Search" class="search-icon">
+        <!------- Main ------->
+        <main>
+            <header>
+                <div class="left-side">
+                    <img src="assets/src/svgs/arrow-left-right.svg" alt="" />
+                    <div class="search">
+                        <input
+                            type="text"
+                            class="search-box"
+                            placeholder="Search for songs, artists etc."
+                        />
+                        <img
+                            src="assets/src/svgs/search.svg"
+                            alt="Search"
+                            class="search-icon"
+                        />
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="icons">
+                        <img
+                            src="assets/src/svgs/notification-bell.svg"
+                            alt="Notification"
+                        />
+                        <img src="assets/src/svgs/setting.svg" alt="Setting" />
+                    </div>
+                    <button class="btn">Upgrade plan</button>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="left-side">
+                    <!------- Banner ------->
+                    <div class="banner">
+                        <p class="reward">Artist of month</p>
+                        <h2 class="artist-name">Mohsen Chavoshi</h2>
+                        <p class="song">Jahan e Laghar</p>
+                        <div class="more">
+                            <div class="friends">
+                                <img
+                                    src="assets/src/images/friend-1.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    src="assets/src/images/friend-2.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    src="assets/src/images/friend-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <p class="listening">+ 5 friends are listening</p>
+                            <div class="like-counter">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                                        fill="#1a9e9a"
+                                    />
+                                </svg>
+                                <p>2K</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="btn">View playlist</button>
+                            <button class="follow">Follow</button>
+                        </div>
+                    </div>
+
+                    <!------- Album Of The Week ------->
+                    <section class="week-album">
+                        <div class="head">
+                            <h2>Album of the Week</h2>
+                            <div class="prev-next">
+                                <span class="prev">
+                                    <img
+                                        src="./assets/src/svgs/arrow-prev.svg"
+                                        alt=""
+                                    />
+                                </span>
+                                <span class="next">
+                                    <img
+                                        src="./assets/src/svgs/arrow-next.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper" albumSwiper>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Mohsen-Chavoshi-Amire-Bi-Gazand-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Mohsen Chavoshi</p>
+                                        <p class="album-name">
+                                            Amire Bi Gazand
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Homayoun-Shajarian-Rage-Khab-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Homayoun Shajarian</p>
+                                        <p class="album-name">Rage Khab</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Chaartaar-Baaraan-Toee-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Chaartaar</p>
+                                        <p class="album-name">Baran Toee</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Ali-Zand-Vakili-Rouyaye-Bi-Tekrar-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Ali Zandvakili</p>
+                                        <p class="album-name">
+                                            Rouyaye Bi Tekrar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Hamed-Homayoun-Dobareh-Eshgh-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Hamed Homayoun</p>
+                                        <p class="album-name">Bobareh Eshgh</p>
+                                    </div>
+                                </div>
+                                <!----- Clone ----->
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Mohsen-Chavoshi-Amire-Bi-Gazand-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Mohsen Chavoshi</p>
+                                        <p class="album-name">
+                                            Amire Bi Gazand
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Homayoun-Shajarian-Rage-Khab-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Homayoun Shajarian</p>
+                                        <p class="album-name">Rage Khab</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Chaartaar-Baaraan-Toee-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Chaartaar</p>
+                                        <p class="album-name">Baran Toee</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Ali-Zand-Vakili-Rouyaye-Bi-Tekrar-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Ali Zandvakili</p>
+                                        <p class="album-name">
+                                            Rouyaye Bi Tekrar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="./assets/src/images/album-Hamed-Homayoun-Dobareh-Eshgh-300x300.jpg"
+                                        alt=""
+                                    />
+                                    <div class="details">
+                                        <p class="owner">Hamed Homayoun</p>
+                                        <p class="album-name">Bobareh Eshgh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!------- Popular Tracks ------->
+                    <section class="popular-tracks">
+                        <h2>Popular Tracks</h2>
+                        <div class="row">
+                            <div class="information">
+                                <img
+                                    src="./assets/src/images/album-Mohsen-Chavoshi-Amire-Bi-Gazand-300x300.jpg"
+                                    alt=""
+                                    class="cover"
+                                />
+                                <p class="name">Amire Bi Gazand</p>
+                            </div>
+                            <div class="owner">
+                                <p>Mohsen Chavoshi</p>
+                            </div>
+                            <div class="duration">
+                                <img
+                                    src="./assets/src/svgs/clock-circle-svgrepo-com.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>04:09</p>
+                            </div>
+                            <div class="listened">
+                                <img
+                                    src="./assets/src/svgs/headphone-symbol-svgrepo-com.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>45K</p>
+                            </div>
+                            <div class="liked">
+                                <img
+                                    src="./assets/src/svgs/fill-heart.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>6K</p>
+                            </div>
+                            <div class="play">
+                                <span class="icon">
+                                    <img
+                                        src="./assets/src/svgs/play-alt-svgrepo-com.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="information">
+                                <img
+                                    src="./assets/src/images/album-Ali-Zand-Vakili-Rouyaye-Bi-Tekrar-300x300.jpg"
+                                    alt=""
+                                    class="cover"
+                                />
+                                <p class="name">Rouyaye Bi Tekrar</p>
+                            </div>
+                            <div class="owner">
+                                <p>Ali Zandvakili</p>
+                            </div>
+                            <div class="duration">
+                                <img
+                                    src="./assets/src/svgs/clock-circle-svgrepo-com.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>04:16</p>
+                            </div>
+                            <div class="listened">
+                                <img
+                                    src="./assets/src/svgs/headphone-symbol-svgrepo-com.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>35K</p>
+                            </div>
+                            <div class="liked">
+                                <img
+                                    src="./assets/src/svgs/fill-heart.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>4K</p>
+                            </div>
+                            <div class="play">
+                                <span class="icon">
+                                    <img
+                                        src="./assets/src/svgs/play-alt-svgrepo-com.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="information">
+                                <img
+                                    src="./assets/src/images/album-Chaartaar-Baaraan-Toee-300x300.jpg"
+                                    alt=""
+                                    class="cover"
+                                />
+                                <p class="name">Baran Toee</p>
+                            </div>
+                            <div class="owner">
+                                <p>Chaartaar</p>
+                            </div>
+                            <div class="duration">
+                                <img
+                                    src="./assets/src/svgs/clock-circle-svgrepo-com.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>03:09</p>
+                            </div>
+                            <div class="listened">
+                                <img
+                                    src="./assets/src/svgs/headphone-symbol-svgrepo-com.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>34K</p>
+                            </div>
+                            <div class="liked">
+                                <img
+                                    src="./assets/src/svgs/fill-heart.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <p>3.5K</p>
+                            </div>
+                            <div class="play">
+                                <span class="icon">
+                                    <img
+                                        src="./assets/src/svgs/play-alt-svgrepo-com.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!------- Sidebar ------->
+                <div class="sidebar">
+                    <section class="trending-artists">
+                        <div class="head">
+                            <h2>Trending Artists</h2>
+                            <a href="">See All</a>
+                        </div>
+                        <div class="row">
+                            <div class="profile">
+                                <img
+                                    src="./assets/src/images/friend-1.jpg"
+                                    alt=""
+                                />
+                                <div class="information">
+                                    <p class="name">Dawid Podsiadlo</p>
+                                    <p class="album-number">4 Albums</p>
+                                </div>
+                            </div>
+                            <div class="rank">
+                                <div class="state">
+                                    <img
+                                        src="./assets/src/svgs/arrow-up-circle.svg"
+                                        alt=""
+                                    />
+                                    <p>+2</p>
+                                </div>
+                                <div class="position">01</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="profile">
+                                <img
+                                    src="./assets/src/images/friend-2.jpg"
+                                    alt=""
+                                />
+                                <div class="information">
+                                    <p class="name">Dawid Podsiadlo</p>
+                                    <p class="album-number">1 Albums</p>
+                                </div>
+                            </div>
+                            <div class="rank">
+                                <div class="state">
+                                    <img
+                                        src="./assets/src/svgs/arrow-up-circle.svg"
+                                        alt=""
+                                    />
+                                    <p>+1</p>
+                                </div>
+                                <div class="position">02</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="profile">
+                                <img
+                                    src="./assets/src/images/friend-3.jpg"
+                                    alt=""
+                                />
+                                <div class="information">
+                                    <p class="name">Dawid Podsiadlo</p>
+                                    <p class="album-number">5 Albums</p>
+                                </div>
+                            </div>
+                            <div class="rank">
+                                <div class="state">
+                                    <img
+                                        src="./assets/src/svgs/arrow-down-circle.svg"
+                                        alt=""
+                                    />
+                                    <p>-2</p>
+                                </div>
+                                <div class="position">03</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="profile">
+                                <img
+                                    src="./assets/src/images/friend-4.jpg"
+                                    alt=""
+                                />
+                                <div class="information">
+                                    <p class="name">Kaska Sochacka</p>
+                                    <p class="album-number">3 Albums</p>
+                                </div>
+                            </div>
+                            <div class="rank">
+                                <div class="state">
+                                    <img
+                                        src="./assets/src/svgs/arrow-down-circle.svg"
+                                        alt=""
+                                    />
+                                    <p>-1</p>
+                                </div>
+                                <div class="position">04</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="genres">
+                        <h2>Genres</h2>
+                        <div class="tags">
+                            <span class="tag">Hip hop</span>
+                            <span class="tag">House</span>
+                            <span class="tag">Country</span>
+                            <span class="tag">Classic</span>
+                            <span class="tag">Pop</span>
+                            <span class="tag">Blues</span>
+                            <span class="tag">Rock</span>
+                        </div>
+                    </section>
+                    <section class="now-playing">
+                        <h2>Now Playing</h2>
+                        <div class="card">
+                            <img
+                                src="./assets/src/images/Jahan-e-Laghar.png"
+                                alt=""
+                            />
+                            <audio
+                                src="./assets/src/audios/Jahan e Laghar.mp3"
+                            ></audio>
+                            <div class="playing-song">
+                                <div class="song-information">
+                                    <p class="song-name">Jahan e Laghar</p>
+                                    <p class="singer-name">Mohsen Chavoshi</p>
+                                </div>
+                                <div class="icons">
+                                    <img
+                                        src="./assets/src/svgs/empty-heart.svg"
+                                        alt=""
+                                        heart
+                                    />
+                                    <img
+                                        src="./assets/src/svgs/download.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="time">
+                                <input type="range" id="progress" value="0" />
+                                <p class="current-time"></p>
+                                <p class="full-time"></p>
+                            </div>
+                            <div class="music-control">
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-backward-step"></i>
+                                <i class="fa-solid fa-play" musicStatus></i>
+                                <i class="fa-solid fa-forward-step"></i>
+                                <i class="fa-solid fa-repeat"></i>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <div class="right-side">
-                <div class="icons">
-                    <img src="assets/src/svgs/notification-bell.svg" alt="Notification">
-                    <img src="assets/src/svgs/setting.svg" alt="Setting">
-                </div>
-                <button class="btn">Upgrade plan</button>
-            </div>
-        </header>
-
-        <div class="content">
-            <div class="left-side">
-
-                <!------- Banner ------->
-                <div class="banner">
-                    <p class="reward">Artist of month</p>
-                    <h2 class="artist-name">Mohsen Chavoshi</h2>
-                    <p class="song">Jahan e Laghar</p>
-                    <div class="more">
-                        <div class="friends">
-                            <img src="assets/src/images/friend-1.jpg" alt="">
-                            <img src="assets/src/images/friend-2.jpg" alt="">
-                            <img src="assets/src/images/friend-3.jpg" alt="">
-                        </div>
-                        <p class="listening">+ 5 friends are listening</p>
-                        <div class="like-counter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z" fill="#1a9e9a"/></svg>
-                            <p>2K</p>
-                        </div>
-                    </div>
-                    <div class="btns">
-                        <button class="btn">View playlist</button>
-                        <button class="follow">Follow</button>
-                    </div>
-                </div>
-
-                <!------- Album Of The Week ------->
-                <section class="week-album">
-                    <div class="head">
-                        <h2>Album of the Week</h2>
-                        <div class="prev-next">
-                            <span class="prev">
-                                <img src="./assets/src/svgs/arrow-prev.svg" alt="">
-                            </span>
-                            <span class="next">
-                                <img src="./assets/src/svgs/arrow-next.svg" alt="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="swiper" albumSwiper>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Mohsen-Chavoshi-Amire-Bi-Gazand-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Mohsen Chavoshi</p>
-                                    <p class="album-name">Amire Bi Gazand</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Homayoun-Shajarian-Rage-Khab-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Homayoun Shajarian</p>
-                                    <p class="album-name">Rage Khab</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Chaartaar-Baaraan-Toee-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Chaartaar</p>
-                                    <p class="album-name">Baran Toee</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Ali-Zand-Vakili-Rouyaye-Bi-Tekrar-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Ali Zandvakili</p>
-                                    <p class="album-name">Rouyaye Bi Tekrar</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Hamed-Homayoun-Dobareh-Eshgh-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Hamed Homayoun</p>
-                                    <p class="album-name">Bobareh Eshgh</p>
-                                </div>
-                            </div>
-                            <!----- Clone ----->
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Mohsen-Chavoshi-Amire-Bi-Gazand-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Mohsen Chavoshi</p>
-                                    <p class="album-name">Amire Bi Gazand</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Homayoun-Shajarian-Rage-Khab-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Homayoun Shajarian</p>
-                                    <p class="album-name">Rage Khab</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Chaartaar-Baaraan-Toee-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Chaartaar</p>
-                                    <p class="album-name">Baran Toee</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Ali-Zand-Vakili-Rouyaye-Bi-Tekrar-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Ali Zandvakili</p>
-                                    <p class="album-name">Rouyaye Bi Tekrar</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/src/images/album-Hamed-Homayoun-Dobareh-Eshgh-300x300.jpg" alt="">
-                                <div class="details">
-                                    <p class="owner">Hamed Homayoun</p>
-                                    <p class="album-name">Bobareh Eshgh</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!------- Popular Tracks ------->
-                <section class="popular-tracks">
-                    <h2>Popular Tracks</h2>
-                    <div class="row">
-                        <div class="information">
-                            <img src="./assets/src/images/album-Mohsen-Chavoshi-Amire-Bi-Gazand-300x300.jpg" alt="" class="cover">
-                            <p class="name">Amire Bi Gazand</p>
-                        </div>
-                        <div class="owner">
-                            <p>Mohsen Chavoshi</p>
-                        </div>
-                        <div class="duration">
-                            <img src="./assets/src/svgs/clock-circle-svgrepo-com.svg" alt="" class="icon">
-                            <p>04:09</p>
-                        </div>
-                        <div class="listened">
-                            <img src="./assets/src/svgs/headphone-symbol-svgrepo-com.svg" alt="" class="icon">
-                            <p>45K</p>
-                        </div>
-                        <div class="liked">
-                            <img src="./assets/src/svgs/fill-heart.svg" alt="" class="icon">
-                            <p>6K</p>
-                        </div>
-                        <div class="play">
-                            <span class="icon">
-                                <img src="./assets/src/svgs/play-alt-svgrepo-com.svg" alt="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="information">
-                            <img src="./assets/src/images/album-Ali-Zand-Vakili-Rouyaye-Bi-Tekrar-300x300.jpg" alt="" class="cover">
-                            <p class="name">Rouyaye Bi Tekrar</p>
-                        </div>
-                        <div class="owner">
-                            <p>Ali Zandvakili</p>
-                        </div>
-                        <div class="duration">
-                            <img src="./assets/src/svgs/clock-circle-svgrepo-com.svg" alt="" class="icon">
-                            <p>04:16</p>
-                        </div>
-                        <div class="listened">
-                            <img src="./assets/src/svgs/headphone-symbol-svgrepo-com.svg" alt="" class="icon">
-                            <p>35K</p>
-                        </div>
-                        <div class="liked">
-                            <img src="./assets/src/svgs/fill-heart.svg" alt="" class="icon">
-                            <p>4K</p>
-                        </div>
-                        <div class="play">
-                            <span class="icon">
-                                <img src="./assets/src/svgs/play-alt-svgrepo-com.svg" alt="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="information">
-                            <img src="./assets/src/images/album-Chaartaar-Baaraan-Toee-300x300.jpg" alt="" class="cover">
-                            <p class="name">Baran Toee</p>
-                        </div>
-                        <div class="owner">
-                            <p>Chaartaar</p>
-                        </div>
-                        <div class="duration">
-                            <img src="./assets/src/svgs/clock-circle-svgrepo-com.svg" alt="" class="icon">
-                            <p>03:09</p>
-                        </div>
-                        <div class="listened">
-                            <img src="./assets/src/svgs/headphone-symbol-svgrepo-com.svg" alt="" class="icon">
-                            <p>34K</p>
-                        </div>
-                        <div class="liked">
-                            <img src="./assets/src/svgs/fill-heart.svg" alt="" class="icon">
-                            <p>3.5K</p>
-                        </div>
-                        <div class="play">
-                            <span class="icon">
-                                <img src="./assets/src/svgs/play-alt-svgrepo-com.svg" alt="">
-                            </span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <!------- Sidebar ------->
-            <div class="sidebar">
-                <section class="trending-artists">
-                    <div class="head">
-                        <h2>Trending Artists</h2>
-                        <a href="">See All</a>
-                    </div>
-                    <div class="row">
-                        <div class="profile">
-                            <img src="./assets/src/images/friend-1.jpg" alt="">
-                            <div class="information">
-                                <p class="name">Dawid Podsiadlo</p>
-                                <p class="album-number">4 Albums</p>
-                            </div>
-                        </div>
-                        <div class="rank">
-                            <div class="state">
-                                <img src="./assets/src/svgs/arrow-up-circle.svg" alt="">
-                                <p>+2</p>
-                            </div>
-                            <div class="position">01</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="profile">
-                            <img src="./assets/src/images/friend-2.jpg" alt="">
-                            <div class="information">
-                                <p class="name">Dawid Podsiadlo</p>
-                                <p class="album-number">1 Albums</p>
-                            </div>
-                        </div>
-                        <div class="rank">
-                            <div class="state">
-                                <img src="./assets/src/svgs/arrow-up-circle.svg" alt="">
-                                <p>+1</p>
-                            </div>
-                            <div class="position">02</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="profile">
-                            <img src="./assets/src/images/friend-3.jpg" alt="">
-                            <div class="information">
-                                <p class="name">Dawid Podsiadlo</p>
-                                <p class="album-number">5 Albums</p>
-                            </div>
-                        </div>
-                        <div class="rank">
-                            <div class="state">
-                                <img src="./assets/src/svgs/arrow-down-circle.svg" alt="">
-                                <p>-2</p>
-                            </div>
-                            <div class="position">03</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="profile">
-                            <img src="./assets/src/images/friend-4.jpg" alt="">
-                            <div class="information">
-                                <p class="name">Kaska Sochacka</p>
-                                <p class="album-number">3 Albums</p>
-                            </div>
-                        </div>
-                        <div class="rank">
-                            <div class="state">
-                                <img src="./assets/src/svgs/arrow-down-circle.svg" alt="">
-                                <p>-1</p>
-                            </div>
-                            <div class="position">04</div>
-                        </div>
-                    </div>
-                </section>
-                <section class="genres">
-                    <h2>Genres</h2>
-                    <div class="tags">
-                        <span class="tag">Hip hop</span>
-                        <span class="tag">House</span>
-                        <span class="tag">Country</span>
-                        <span class="tag">Classic</span>
-                        <span class="tag">Pop</span>
-                        <span class="tag">Blues</span>
-                        <span class="tag">Rock</span>
-                    </div>
-                </section>
-                <section class="now-playing">
-                    <h2>Now Playing</h2>
-                    <div class="card">
-                        <img src="./assets/src/images/Jahan-e-Laghar.png" alt="">
-                        <audio src="./assets/src/audios/Jahan e Laghar.mp3"></audio>
-                        <div class="playing-song">
-                            <div class="song-information">
-                                <p class="song-name">Jahan e Laghar</p>
-                                <p class="singer-name">Mohsen Chavoshi</p>
-                            </div>
-                            <div class="icons">
-                                <img src="./assets/src/svgs/empty-heart.svg" alt="" heart>
-                                <img src="./assets/src/svgs/download.svg" alt="">
-                             </div>
-                        </div>
-                        <div class="time">
-                            <input type="range" id="progress" value="0">
-                            <p class="current-time"></p>
-                            <p class="full-time"></p>
-                        </div>
-                        <div class="music-control">
-                            <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-backward-step"></i>
-                            <i class="fa-solid fa-play" musicStatus></i>
-                            <i class="fa-solid fa-forward-step"></i>
-                            <i class="fa-solid fa-repeat"></i>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
-    <!------- Swiper CDN ------->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!------- Script ------->
-    <script src="./assets/js/script.js"></script>
-</body>
+        </main>
+        <!------- Swiper CDN ------->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!------- Script ------->
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
